@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+}
+
+.box{
+    background-color: hsl(217, 19%, 24%);
+    max-height: 50vh;
+    height: auto;
+    max-width: 30vw;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+h1{
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0 10px 0;
+}
+
+p{
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0 20px;
+}
+
+.divider{
+    box-sizing: border-box;
+    position: relative;
+    top: 25px;
+    padding: 0 30px;
+}
+.divider img{
+    width: 25vw;
+    height: 2.5vh;
+}
+
+.dice{
+    background: hsl(150, 100%, 66%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    top: 22px;
+    cursor: pointer;
+    border: none;
+}
+.dice :hover{
+    animation: dicerotate 4s linear infinite;
+
+}
+
+@keyframes dicerotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+       
+    } 
+     
+}
